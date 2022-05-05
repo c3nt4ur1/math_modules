@@ -1,10 +1,10 @@
 /*
  * Created by c3nt4ur1 in 22/04/2022
+ * Copyright 2022 c3ntaur1
  */
 
 #ifndef GEOMETRIC_PROGRESSION_GEOMETRIC_PROGRESSION_H
 #define GEOMETRIC_PROGRESSION_GEOMETRIC_PROGRESSION_H
-
 #include <iostream>
 #include <cmath>
 using namespace std;
@@ -19,6 +19,10 @@ namespace geometric_progression{
         double side2 = 1-reason;
         return side1/side2;
     }
+    template<typename T> double infinity_sum(T reason, T term1){
+        return (term1) / (1-reason);
+    }
+
 }
 
 #endif //GEOMETRIC_PROGRESSION_GEOMETRIC_PROGRESSION_H
