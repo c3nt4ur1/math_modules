@@ -7,6 +7,13 @@
 #define GEOMETRIC_PROGRESSION_GEOMETRIC_PROGRESSION_H
 #include <iostream>
 #include <cmath>
+
+//create a class inherited from Progression ("progression.h")
+#include "progression.h"
+class GeometricProgression : protected Progression{
+
+};
+
 using namespace std;
 
 namespace geometric_progression{
