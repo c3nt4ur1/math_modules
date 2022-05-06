@@ -6,6 +6,12 @@
 #include <iostream>
 using namespace std;
 
+//create a class inherited from Progression ("progression.h")
+#include "progression.h"
+
+class ArithmeticProgression : protected Progression{
+
+};
 
 namespace arithmetic_progression {
 
