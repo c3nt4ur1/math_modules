@@ -1,6 +1,17 @@
+/*
+ * Created by c3nt4ur1 in 22/04/2022
+ * Copyright 2022 c3ntaur1
+ */
+
 #include <iostream>
 using namespace std;
 
+//create a class inherited from Progression ("progression.h")
+#include "progression.h"
+
+class ArithmeticProgression : protected Progression{
+
+};
 
 namespace arithmetic_progression {
 
@@ -32,3 +43,9 @@ namespace arithmetic_progression {
     }
 }
 
+//   _______   _______   __      __   ___________   ________    _     _    ________    __
+// /  _____/  | _____|  | |    /  |  |___    ___|  |   ___  |  | |   | |  |   ___  |  |__|
+// |  |       | |___    | |  / /| |      |  |      |  |__|  |  | |   | |  |  |__| _|   __
+// |  |       | ____|   | | / / | |      |  |      |   __   |  | |   | |  | | \ \     |  |
+// |  |____   | |____   | |/ /  | |      |  |      |  |  |  |  | |___| |  | |  \ \    |  |
+// \_______/  |______|  |___/   |_|      |__|      |__|  |__|   \_____/   |_|   \_\   |__|
