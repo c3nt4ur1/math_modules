@@ -1,6 +1,7 @@
-//
-// Created by Adriano on 05/05/2022.
-//
+/*
+ * Created by c3nt4ur1 in 05/05/2021
+ * Copyright 2022 c3ntaur1
+ */
 
 #ifndef MATH_ALGORITHMS_PROGRESSION_H
 #define MATH_ALGORITHMS_PROGRESSION_H
@@ -34,6 +35,14 @@ public:
     ~Progression(){
         delete this;
     }
-}
+};
 
-#endif //MATH_ALGORITHMS_PROGRESSION_H
+#endif
+
+
+//   _______   _______   __      __   ___________   ________    _     _    ________    __
+// /  _____/  | _____|  | |    /  |  |___    ___|  |   ___  |  | |   | |  |   ___  |  |__|
+// |  |       | |___    | |  / /| |      |  |      |  |__|  |  | |   | |  |  |__| _|   __
+// |  |       | ____|   | | / / | |      |  |      |   __   |  | |   | |  | | \ \     |  |
+// |  |____   | |____   | |/ /  | |      |  |      |  |  |  |  | |___| |  | |  \ \    |  |
+// \_______/  |______|  |___/   |_|      |__|      |__|  |__|   \_____/   |_|   \_\   |__|
