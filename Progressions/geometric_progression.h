@@ -8,13 +8,25 @@
 #include <iostream>
 #include <cmath>
 
-//create a class inherited from Progression ("progression.h")
+using namespace std;
+
+
+
 #include "progression.h"
 class GeometricProgression : protected Progression{
+public:
+    //After configuration of the class, write equivalent functions to the geometric_progression namespace
+    //Constructors
 
+
+    //Destructor
+    ~GeometricProgression() {
+        delete this;
+    }
+
+protected:
+    double reason;
 };
-
-using namespace std;
 
 namespace geometric_progression{
     template<typename T> T n_term(T reason, int n, T term1){

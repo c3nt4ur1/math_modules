@@ -17,6 +17,7 @@ protected:
     vector<double> currentArray;
     double term1 = currentArray[0];
     string formationLaw;
+    int numOfTerms = currentArray.size();
 public:
     //Constructors
     Progression(){ /*Generates an empty progression */ }
@@ -31,9 +32,17 @@ public:
         this->term1 = currentArray[0];
         this->formationLaw = fl;
     }
+
+    explicit Progression(double term){
+        this->term1 = term;
+    }
     //Destructor
     ~Progression(){
         delete this;
+    }
+    //Other functions
+    void setArray(vector<double> T){
+        this->currentArray = T;
     }
 };
 
