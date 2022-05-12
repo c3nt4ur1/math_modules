@@ -7,25 +7,28 @@
 #define GEOMETRIC_PROGRESSION_GEOMETRIC_PROGRESSION_H
 #include <iostream>
 #include <cmath>
+#include <string>
 
 using namespace std;
-
-
 
 #include "progression.h"
 class GeometricProgression : protected Progression{
 public:
     //After configuration of the class, write equivalent functions to the geometric_progression namespace
     //Constructors
+    GeometricProgression() : Progression(){/*Initializes an empty geometric progression */}
 
-
+    GeometricProgression(double reason, double term1) : Progression(term1){
+        this->reason = reason;
+        this->formationLaw = to_string(term1) + to_string(this->reason) + "^ n-1";
+    }
     //Destructor
     ~GeometricProgression() {
         delete this;
     }
 
 protected:
-    double reason;
+    double reason = 0;
 };
 
 namespace geometric_progression{
