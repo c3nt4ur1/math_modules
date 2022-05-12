@@ -9,7 +9,7 @@ using namespace std;
 //create a class inherited from Progression ("progression.h")
 #include "progression.h"
 
-class ArithmeticProgression : protected Progression{
+class ArithmeticProgression : protected Progression{ //For OOP usage of arithmetic progressions
 
     //After configuration of the class, write equivalent functions to the arithmetic_progression namespace
     //Constructors
@@ -34,8 +34,16 @@ class ArithmeticProgression : protected Progression{
         }
     }
 
+    double getNTerm(int n){
+        return this->term1 + ((n-1) * this->reason);
+    }
+
+    double getNSum(int n){
+        return (n*(term1 + getNTerm(n)))/2;
+    }
+
 protected:
-    double reason;
+    double reason = 0;
 };
 
 namespace arithmetic_progression { //Functions for POP usage of arithmetic progressions
@@ -51,7 +59,7 @@ namespace arithmetic_progression { //Functions for POP usage of arithmetic progr
     T nTerm(T* pArray, int n) {
 
         /*
-         * //Returns the value for the n(th) term of the array
+         * Returns the value for the n(th) term of the array
          * Param1: Pointer to index[o] of the array
          * Param2: Value of n (Required Term)
          */
@@ -67,6 +75,8 @@ namespace arithmetic_progression { //Functions for POP usage of arithmetic progr
         return (n * (*pArray + nTerm(pArray, n))) / 2;
     }
 }
+
+
 
 //   _______   _______   __      __   ___________   ________    _     _    ________    __
 // /  _____/  | _____|  | |    /  |  |___    ___|  |   ___  |  | |   | |  |   ___  |  |__|
