@@ -13,7 +13,12 @@ using namespace std;
 
 #include "progression.h"
 class GeometricProgression : protected Progression{
+protected:
+    double reason = 0;
+    double infiniteSum = 0;
+
 public:
+#define __no_infinite_sum false
     //After configuration of the class, write equivalent functions to the geometric_progression namespace
     //Constructors
     GeometricProgression() : Progression(){/*Initializes an empty geometric progression */}
@@ -21,14 +26,24 @@ public:
     GeometricProgression(double reason, double term1) : Progression(term1){
         this->reason = reason;
         this->formationLaw = to_string(term1) + to_string(this->reason) + "^ n-1";
+        if(reason >= 0 && reason <= 1){
+            this->infiniteSum = (this->term1)/(1-reason);
+        }else{
+            this->infiniteSum = __no_infinite_sum;
+        }
     }
     //Destructor
     ~GeometricProgression() {
         delete this;
     }
 
-protected:
-    double reason = 0;
+    //Functions
+    template<typename T> T getNTerm(int n){
+        return (term1 * pow(this->reason, (n-1)));
+    }
+    template<typename T> T getNSum(int n){
+        return (term1 * (1 - pow(reason, n))) / (1-reason);
+    }
 };
 
 namespace geometric_progression{
