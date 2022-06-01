@@ -34,12 +34,16 @@ class ArithmeticProgression : protected Progression{ //For OOP usage of arithmet
         }
     }
 
-    double getNTerm(int n){
+    double getNTerm(int n){ //Gets the value of the Nth term of the progression
         return this->term1 + ((n-1) * this->reason);
     }
 
-    double getNSum(int n){
+    double getNSum(int n){ //Gets the sum of the N first terms of the progression
         return (n*(term1 + getNTerm(n)))/2;
+    }
+
+    vector<double> getProgression(){
+        return this->currentArray;
     }
 
 protected:
