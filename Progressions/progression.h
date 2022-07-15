@@ -15,7 +15,7 @@ using namespace std;
 class Progression{
 protected:
     vector<double> currentArray;
-    double term1 = currentArray[0];
+    double term1 = *currentArray.begin();
     string formationLaw;
     int numOfTerms = currentArray.size();
 public:
@@ -24,7 +24,7 @@ public:
 
     explicit Progression(vector<double> vec){
         this->currentArray = vec;
-        this->term1 = currentArray[0];
+        this->term1 = *currentArray.begin();
     }
 
     Progression(vector<double> vec, string fl){
