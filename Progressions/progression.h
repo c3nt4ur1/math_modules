@@ -29,7 +29,7 @@ public:
 
     Progression(vector<double> vec, string fl){
         this->currentArray = vec;
-        this->term1 = currentArray[0];
+        this->term1 = *currentArray.begin();
         this->formationLaw = fl;
     }
 
