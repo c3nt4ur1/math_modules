@@ -17,7 +17,7 @@ namespace degree {
             case angle > 0 && angle < 90:
                 return 180 - angle;
             case angle > 90 && angle < 180:
-                return 180 - angle;
+                return angle;
             case angle > 180 && angle < 270:
                 delta = angle - 180;
                 return 360 - delta;
