@@ -6,9 +6,7 @@
 #define MATH_ALGORITHMS_MEASURES_H
 #include <iostream>
 #include <cmath>
-
 using namespace std;
-
 
 namespace degree {
     template<typename T>
