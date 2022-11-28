@@ -50,16 +50,12 @@ namespace degree {
     template<typename T>
     T sameSin(T src) {
         T angle = determination(src);
-        if(angle >= 0 && angle < 90){
+        if((angle >= 0 && angle < 90) || (angle >= 90 && angle < 180)){
             return 180 - angle;
-        }else if (angle >= 90 && angle < 180){
-            return 180 - angle;
-        }else if (angle >= 180 && angle < 270){
-            return 540 - angle;
-        }else if(angle >= 270 && angle < 360){
+        }else if ((angle >= 180 && angle < 270) || (angle >= 270 && angle < 360)){
             return 540 - angle;
         }else{
-
+            return -1;
         }
     }
 }
