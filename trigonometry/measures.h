@@ -31,7 +31,7 @@ namespace degree {
         }else if(temp > 270 && angle < 360){
             return 4;
         }
-        return 0; //If the angle is over an axis, its quadrant will be set as 0
+        return 0; //Error: If the angle is over an axis, its quadrant will be set as 0
     }
 
     template <typename T>
@@ -46,7 +46,7 @@ namespace degree {
         }else if(quadrant(temp) == 4){
             return 360 - temp;
         }
-        return -1; //The angle cannot be reduced since it belongs to an axis
+        return -1; //Error: The angle cannot be reduced since it belongs to an axis
 
     }
     template<typename T>
@@ -69,7 +69,12 @@ namespace degree {
 namespace radian{
     template <typename T>
     T determination(T angle) {
-        return angle % (2 * M_PI);
+        if (angle >= 0) {
+            return angle % (2 * M_PI);
+        }else{
+            T temp = (2 * M_PI) - angle;
+            return temp % (2 * M_PI);
+        }
     }
 }
 
