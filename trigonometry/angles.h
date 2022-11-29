@@ -48,7 +48,7 @@ namespace degree {
 
     }
     template<typename T>
-    T sameSin(T src) {
+    T sameSin(T src) { //Simplifying the function with degree::reduction and degree::determination required
         T angle = determination(src);
         if((angle >= 0 && angle < 90) || (angle >= 90 && angle < 180)){
             return 180 - angle;
@@ -56,6 +56,22 @@ namespace degree {
             return 540 - angle;
         }else{
             return -1;
+        }
+    }
+    template<typename T>
+    T sameCos(T src) {
+        T angle = determination(src);
+
+        if(quadrant(angle) == 1){
+            return 360 - angle;
+        }else if(quadrant(angle) == 2){
+            return 180 + reduction(angle);
+        }else if(quadrant(angle) == 3){
+            return 180 - reduction(angle);
+        }else if(quadrant(angle) == 4){
+            reduction(angle);
+        }else if(quadrant(angle) == 0){
+            return reduction(angle + 180);
         }
     }
 }
