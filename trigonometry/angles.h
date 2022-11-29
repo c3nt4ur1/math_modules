@@ -2,8 +2,8 @@
 // Created by ANBonin on 20/08/2022.
 //
 
-#ifndef MATH_ALGORITHMS_MEASURES_H
-#define MATH_ALGORITHMS_MEASURES_H
+#ifndef MATH_ALGORITHMS_ANGLES_H
+#define MATH_ALGORITHMS_ANGLES_H
 #include <iostream>
 #include <cmath>
 using namespace std;
@@ -73,4 +73,4 @@ namespace radian{
 }
 
 
-#endif //MATH_ALGORITHMS_MEASURES_H
+#endif //MATH_ALGORITHMS_ANGLES_H
