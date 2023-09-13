@@ -82,8 +82,7 @@ namespace radian{
         if (angle >= 0) {
             return angle % (2 * M_PI);
         }else{
-            T temp = (2 * M_PI) - angle;
-            return temp % (2 * M_PI);
+           return 360 - (angle % 360);
         }
     }
 }
