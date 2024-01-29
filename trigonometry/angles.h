@@ -8,6 +8,10 @@
 #include <cmath>
 using namespace std;
 
+float rad_to_deg(float rad){
+    return (180*rad)/M_PI;
+}
+
 namespace degree {
     template<typename T>
     T determination(T angle){
@@ -72,18 +76,6 @@ namespace degree {
             reduction(angle);
         }else if(quadrant(angle) == 0){
             return reduction(angle + 180);
-        }
-    }
-}
-
-namespace radian{
-    template <typename T>
-    T determination(T angle) {
-        if (angle >= 0) {
-            return angle % (2 * M_PI);
-        }else{
-            T temp = (2 * M_PI) - angle;
-            return temp % (2 * M_PI);
         }
     }
 }
