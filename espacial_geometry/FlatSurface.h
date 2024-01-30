@@ -12,7 +12,7 @@ using namespace std;
 #include "plane.h"
 class FlatSurface {
 protected:
-    Plane region;
+    Plane region = Plane(1000, 1000);
     vector<float>position;
 
     int sides = -1;
