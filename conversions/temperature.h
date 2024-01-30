@@ -1,6 +1,6 @@
-//
-// Created by Adriano on 31/05/2022.
-//
+/*
+ * Copyright 2024 c3ntaur1
+ */
 
 #ifndef MATH_ALGORITHMS_TEMPERATURE_H
 #define MATH_ALGORITHMS_TEMPERATURE_H

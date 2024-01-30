@@ -1,6 +1,6 @@
-//
-// Created by ANBonin on 30/01/2024.
-//
+/*
+ * Copyright 2024 c3ntaur1
+ */
 #include "plane.h"
 
 void Plane::setPointValue(int x, int y, int value){ //0 for empty, 1 for line, 2 for vertex

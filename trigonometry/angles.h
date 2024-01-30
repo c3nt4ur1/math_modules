@@ -1,7 +1,6 @@
-//
-// Created by ANBonin on 20/08/2022.
-//
-
+/*
+ * Copyright 2022 c3ntaur1
+ */
 #ifndef MATH_ALGORITHMS_ANGLES_H
 #define MATH_ALGORITHMS_ANGLES_H
 #include <iostream>

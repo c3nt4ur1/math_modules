@@ -1,6 +1,6 @@
-//
-// Created by ANBonin on 29/01/2024.
-//
+/*
+ * Copyright 2024 c3ntaur1
+ */
 
 #include "FlatSurface.h"
 FlatSurface::FlatSurface(Plane& plane, int sides, vector<float> sidesSizes, vector<float> angles){
