@@ -1,6 +1,6 @@
-//
-// Created by ANBonin on 07/07/2022.
-//
+/*
+ * Copyright 2022 c3ntaur1
+ */
 
 #ifndef MATH_ALGORITHMS_TRIANGLES_H
 #define MATH_ALGORITHMS_TRIANGLES_H

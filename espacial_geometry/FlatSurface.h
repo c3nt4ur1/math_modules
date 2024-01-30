@@ -1,6 +1,6 @@
-//
-// Created by ANBonin on 29/01/2024.
-//
+/*
+ * Copyright 2024 c3ntaur1
+ */
 
 #ifndef MATH_ALGORITHMS_FLATSURFACE_H
 #define MATH_ALGORITHMS_FLATSURFACE_H
