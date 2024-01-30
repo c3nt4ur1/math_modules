@@ -80,5 +80,4 @@ namespace degree {
     }
 }
 
-
 #endif //MATH_ALGORITHMS_ANGLES_H
