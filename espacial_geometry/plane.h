@@ -11,7 +11,7 @@ using namespace std;
 
 class Plane {
 protected:
-    vector<int> diagram; //must be seen as a 2D vector
+    vector<vector<int>> diagram; //must be seen as a 2D vector
     /*
      * each element of the diagram is a dot in a cartesian diagram
      */
